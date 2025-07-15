@@ -1,0 +1,217 @@
+/* Style for the row containing the search bar and table */
+.search-table-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Style for the search bar */
+.search-table-col {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Make the search input smaller and more compact */
+#searchInput {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Style the table itself */
+.table-responsive {
+    flex: 3;
+    margin-top: 10px; /* Added margin to make space */
+}
+
+/* Optional: style the table to make it look consistent */
+table.dataTable,
+table.dataTable thead,
+table.dataTable tbody,
+table.dataTable th,
+table.dataTable td {
+    border: 1px solid #dee2e6 !important;
+}
+
+/* Optional: fix table pagination styles */
+.dataTables_paginate {
+    padding-top: 20px;
+}
+
+th:last-child, td:last-child {
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: 60px;
+    padding: 0 !important;
+}
+/* Ini untuk benar-benar center jika ada style aneh dari datatables */
+td .btn.rounded-circle {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th:first-child, td:first-child {
+    width: 1% !important;
+    white-space: nowrap !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+th:last-child, td:last-child {
+    width: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    padding: 0 !important;
+}
+
+.table {
+    table-layout: auto !important;
+    width: 100% !important;
+}
+
+body, .container, .card, .table, .btn, h1, h2, h3, h4, h5, h6, label, input, button, th, td {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif !important;
+}
+h1, h2, h3, .fw-bold {
+    font-weight: 600;
+}
+
+/* Modern Table Minimalis */
+#myTable {
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 2px 16px 0 rgba(51,98,154,0.07);
+background: #fff;
+}
+#myTable thead tr th {
+border-bottom: 2px solid #249ddb33 !important;
+color: #249ddb !important;
+background: linear-gradient(90deg, #e7f1fa 0%, #fafdff 100%) !important;
+font-family: 'Inter', Arial, sans-serif;
+font-weight: 700;
+font-size: 1rem;
+letter-spacing: 0.01em;
+}
+#myTable tbody tr {
+transition: background 0.18s;
+}
+#myTable tbody tr:hover {
+background: #f2f8fd !important;
+}
+#myTable td, #myTable th {
+vertical-align: middle !important;
+text-align: center;
+border: none;
+padding-top: 18px !important;
+padding-bottom: 18px !important;
+font-size: 0.98rem;
+}
+#myTable td {
+background: #fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+border-radius: 50px !important;
+margin: 0 2px;
+border: none !important;
+background: #e7f1fa !important;
+color: #249ddb !important;
+transition: background .16s;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+background: #249ddb !important;
+color: #fff !important;
+}
+.dataTables_wrapper .dataTables_filter input[type="search"] {
+border-radius: 32px;
+border: 1px solid #e2e8f0;
+padding: 6px 18px;
+margin-left: 10px;
+background: #fafdff;
+font-size: 0.98rem;
+transition: border 0.2s;
+}
+.dataTables_wrapper .dataTables_filter input[type="search"]:focus {
+border: 1.5px solid #249ddb;
+outline: none;
+}
+#myTable th:last-child,
+#myTable td:last-child {
+    min-width: 70px !important;
+    width: 70px !important;
+    max-width: 100px;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 0 !important;
+}
+#myTable td .btn.rounded-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+/* Search bar DataTables lebih rapi & biru */
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 16px !important;
+}
+.dataTables_wrapper .dataTables_filter label {
+    color: #0165a4 !important;
+    font-weight: 500;
+}
+.dataTables_wrapper .dataTables_filter input[type="search"] {
+    border-radius: 32px;
+    border: 1.5px solid #0165a4 !important;
+    background: #fafdff;
+    font-size: 1rem;
+    padding: 8px 18px;
+    color: #0165a4;
+    margin-left: 12px;
+    transition: border 0.18s;
+}
+.dataTables_wrapper .dataTables_filter input[type="search"]:focus {
+    border-color: #249ddb !important;
+    outline: none;
+}
+.dataTables_wrapper .dataTables_filter input[type="search"]::placeholder {
+    color: #0165a4;
+    opacity: .75;
+}
+/* Table style modern, no gradient */
+#myTable {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px 0 rgba(51,98,154,0.07);
+    background: #fff;
+}
+#myTable thead tr th {
+    border-bottom: 2px solid #249ddb33 !important;
+    color: #0165a4 !important;
+    background: #e7f1fa !important;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+}
+#myTable tbody tr {
+    transition: background 0.18s;
+}
+#myTable tbody tr:hover {
+    background: #f6faff !important;
+}
+#myTable td, #myTable th {
+    vertical-align: middle !important;
+    text-align: center;
+    border: none;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    font-size: 0.98rem;
+}
+#myTable td {
+    background: #fff !important;
+}
