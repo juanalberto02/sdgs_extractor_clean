@@ -7,3 +7,5 @@ pymysql
 pandas
 starlette
 itsdangerous
+scikit-learn
+PyMuPDF
