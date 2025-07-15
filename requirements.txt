@@ -6,3 +6,4 @@ mysql-connector-python
 pymysql
 pandas
 starlette
+itsdangerous
