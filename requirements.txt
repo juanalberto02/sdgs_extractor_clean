@@ -9,3 +9,4 @@ starlette
 itsdangerous
 scikit-learn
 PyMuPDF
+python-dotenv
